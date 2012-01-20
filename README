@@ -1,0 +1,1 @@
+UIView subclass that implements pullable behaviour similar to the Notification Center in iOS 5. More information: http://www.crocodella.com.br/2011/01/rpg-like-text-box-with-cocos2d/
