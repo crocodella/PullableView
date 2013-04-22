@@ -109,9 +109,9 @@
 @property (readwrite,assign) id<PullableViewDelegate> delegate;
 
 /**
- The current state of the `PullableView`.
+ Whether the PullableView is currently opened or not.
  */
-@property (readonly, assign) BOOL opened;
+@property (readonly,assign) BOOL opened;
 
 /**
  Toggles the state of the PullableView
