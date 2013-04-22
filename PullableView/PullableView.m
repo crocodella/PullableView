@@ -15,6 +15,7 @@
 @synthesize animate;
 @synthesize animationDuration;
 @synthesize delegate;
+@synthesize opened;
 
 - (id)initWithFrame:(CGRect)frame
 {

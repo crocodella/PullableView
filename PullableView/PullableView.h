@@ -109,6 +109,11 @@
 @property (readwrite,assign) id<PullableViewDelegate> delegate;
 
 /**
+ Whether the PullableView is currently opened or not.
+ */
+@property (readonly,assign) BOOL opened;
+
+/**
  Toggles the state of the PullableView
  @param op New state of the view
  @param anim Flag indicating if the transition should be animated
