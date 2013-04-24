@@ -29,21 +29,18 @@
         // Creates the handle view. Subclasses should resize, reposition and style this view
         handleView = [[UIView alloc] initWithFrame:CGRectMake(0, frame.size.height - 40, frame.size.width, 40)];
         [self addSubview:handleView];
-        [handleView release];
         
         dragRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleDrag:)];
         dragRecognizer.minimumNumberOfTouches = 1;
         dragRecognizer.maximumNumberOfTouches = 1;
         
         [handleView addGestureRecognizer:dragRecognizer];
-        [dragRecognizer release];
         
         tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
         tapRecognizer.numberOfTapsRequired = 1;
         tapRecognizer.numberOfTouchesRequired = 1;
         
         [handleView addGestureRecognizer:tapRecognizer];
-        [tapRecognizer release];
         
         opened = NO;
     }
