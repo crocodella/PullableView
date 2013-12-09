@@ -13,7 +13,6 @@
         UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
         imgView.frame = CGRectMake(0, 0, 320, 460);
         [self addSubview:imgView];
-        [imgView release];
     }
     return self;
 }

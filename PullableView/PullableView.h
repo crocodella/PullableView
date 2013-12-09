@@ -48,7 +48,7 @@
     BOOL animate;
     float animationDuration;
     
-    id<PullableViewDelegate> delegate;
+    id<PullableViewDelegate> __unsafe_unretained delegate;
 }
 
 /**
@@ -106,7 +106,7 @@
  If the view is set to animate transitions, the delegate will be
  called only when the animation finishes.
  */
-@property (readwrite,assign) id<PullableViewDelegate> delegate;
+@property (readwrite,unsafe_unretained) id<PullableViewDelegate> delegate;
 
 /**
  The current state of the `PullableView`.
